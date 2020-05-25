@@ -12,3 +12,19 @@ starting to learn docker.
 * The CMD line.
 *	CMD will instruct docker that by default, docker will run ping [web page] every time the container is started without further arguments.
 * 
+* may/25/2020
+* 
+
+# nginx log
+* The nginx_main_site.conf
+*	the fist block hte server is created and listens on port 80 rooted in the services folder under www within html
+*	 /srv/www/html on the image.
+* the second block: requires changing for bigger sites, but essentially prevents the download of '.'files such as
+*	.htaccess, .htpasswd and others that should not be publicly available 
+* the last block: makes sure that any path starting with '/' will be read from root and 
+*	if the index file is not provided, will use the internal index.html.
+*	if none available in the directory the autoindex ensures that it can show you a human listing of a directory.
+* 
+* the nginx confi is functional, but does not include ssl/ loggin/ error files/ file lookup/ matching ....est...
+*
+

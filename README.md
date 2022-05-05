@@ -1,6 +1,12 @@
 # LearningDocker
 starting to learn docker.  
 
+## What the heck is this ?
+
+## COntainers- All Day Everyday
+
+## Pro and Cons
+
 # May 2020 log:
 * The FROM line. 
 *	FROM ubuntu:lastest - indicates the latest ubuntu docker image as the base to run the service
